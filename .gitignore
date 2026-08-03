@@ -10,7 +10,6 @@ dist/
 app/dist/
 
 # 数据库(主库文件不入库,避免频繁变动和泄露用户数据)
-*.db
 *.db-shm
 *.db-wal
 *.sqlite3
