@@ -11,7 +11,7 @@ const path = require('path')
 const fs = require('fs')
 const Database = require('better-sqlite3')
 
-const DB_PATH = path.join(__dirname, '..', 'styleai.db')
+const DB_PATH = path.join(__dirname, 'styleai.db')
 const SEED_DIR = path.join(__dirname, 'seed')
 
 /**

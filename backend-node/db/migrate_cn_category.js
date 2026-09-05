@@ -4,7 +4,7 @@
  */
 const Database = require('better-sqlite3')
 const path = require('path')
-const db = new Database(path.join(__dirname, '..', 'styleai.db'))
+const db = new Database(path.join(__dirname, 'styleai.db'))
 
 console.log('=== 规则系统全面汉化 ===\n')
 

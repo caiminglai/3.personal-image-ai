@@ -1,6 +1,6 @@
 /**
  * 推荐引擎端到端测试
- * 依赖真实数据库（backend-node/styleai.db）+ 种子数据（195 规则组）
+ * 依赖真实数据库（backend-node/db/styleai.db）+ 种子数据（195 规则组）
  *
  * 覆盖：
  * - buildRecommendation 4 维度输出（穿搭/妆容/发型/配饰）

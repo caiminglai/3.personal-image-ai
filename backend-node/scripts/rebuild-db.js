@@ -8,7 +8,7 @@ const fs = require('fs')
 const path = require('path')
 const db = require('../db/init')
 
-const DB_PATH = path.join(__dirname, '..', 'styleai.db')
+const DB_PATH = path.join(__dirname, '..', 'db', 'styleai.db')
 
 // 已知游戏名
 const KNOWN_GAMES = [

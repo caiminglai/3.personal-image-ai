@@ -23,8 +23,8 @@ const {
   BROKEN_DIR_NAME,
 } = require('../utils/model-utils');
 
-// 数据库文件路径:backend-node/styleai.db
-const DB_PATH = path.join(__dirname, '..', 'styleai.db');
+// 数据库文件路径:backend-node/db/styleai.db(容器内整个 db/ 目录挂载,不用单文件挂载)
+const DB_PATH = path.join(__dirname, 'styleai.db');
 const SCHEMA_PATH = path.join(__dirname, 'schema.sql');
 
 // 打开数据库(同时设置 WAL 模式)

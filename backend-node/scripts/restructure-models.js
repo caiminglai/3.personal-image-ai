@@ -13,11 +13,11 @@ const path = require('path')
 const Database = require('better-sqlite3')
 
 const MODELS_DIR = path.resolve(__dirname, '..', '..', 'models')
-const db = new Database(path.join(__dirname, '..', 'styleai.db'))
+const db = new Database(path.join(__dirname, '..', 'db', 'styleai.db'))
 
 // Debug: verify paths
 console.log('MODELS_DIR:', MODELS_DIR)
-console.log('DB_PATH:', path.join(__dirname, '..', 'styleai.db'))
+console.log('DB_PATH:', path.join(__dirname, '..', 'db', 'styleai.db'))
 console.log('今汐 test:', path.join(MODELS_DIR, '今汐+鸣潮', '今汐.pmx'))
 console.log('exists:', require('fs').existsSync(path.join(MODELS_DIR, '今汐+鸣潮', '今汐.pmx')))
 console.log('')
