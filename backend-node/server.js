@@ -67,7 +67,9 @@ const horoscopeRoutes = require('./routes/horoscope');
 
 const app = express();
 const PORT = parseInt(process.env.PORT || '5000', 10);
-const HOST = '127.0.0.1';
+// 默认只听回环(裸机开发时不暴露到局域网);容器内由 Dockerfile 的 ENV HOST=0.0.0.0 打开,
+// 否则端口映射与 Caddy 反代都够不着。
+const HOST = process.env.HOST || '127.0.0.1';
 
 // ===== 中间件 =====
 app.use(compression());
